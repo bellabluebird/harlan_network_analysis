@@ -5,33 +5,33 @@ this pipeline provides stats and visualizations to easily convey the social orga
 
 ## Files: 
 ### main.R:
-tis is a high-level workflow manager, loading and executing various analysis functions while providing clear progress updates to the user. this is designed to be accessible to biologists and others looking to use the same analysis techniques. 
+this is a high-level workflow manager, loading and executing various analysis functions while providing clear progress updates to the user. this is designed to be accessible to biologists and others looking to use the same analysis techniques. 
 ### functions_v5.
   this is the core analysis library, holding functions to perform the following tasks:  
-  #### analyze_temporal_patterns
+  ### analyze_temporal_patterns
   reveals colony activity rhythms and peak interaction times, which can indicate optimal 
   foraging periods or colony-wide behavioral patterns
-  #### analyze_interaction_types
+  ### analyze_interaction_types
   helps understand the social structure of the colony by showing which interactions are most 
   common and how they're distributed by counting interaction type, duration, and common pairs
-  #### analyze_forager_patterns
+  ### analyze_forager_patterns
   examines behavioral differences between forager and nurse ants using trip frequency analysis, food sharing patterns,
   and network position metrics
-  #### analyze_ant_colony
+  ### analyze_ant_colony
   comprehensive analysis of the colony's social network structure using network density, reciprocity,
   path lengths, community detection, and centrality metrics
-  #### compare_roles_statistically
+  ### compare_roles_statistically
   uses wilcoxon rank-sum tests to measure: 
-    * Degree centrality (total connections)
-    * In-degree (received interactions)
-    * Out-degree (initiated interactions)
-    * Betweenness centrality (bridge positions)
-    * Closeness centrality (accessibility)
-    * Eigenvector centrality (connection to important ants)
+    - Degree centrality (total connections)
+    - In-degree (received interactions)
+    - Out-degree (initiated interactions)
+    - Betweenness centrality (bridge positions)
+    - Closeness centrality (accessibility)
+    - Eigenvector centrality (connection to important ants)
   this quantifies behavioral differences and validates classifications
-  #### generate_community_stats
+  ### generate_community_stats
   analyzes strength + quantity of subgroup formations within the colony
-  #### create_enhanced_visualization
+  ### create_enhanced_visualization
   helps the user create statistically scaled network diagrams using role-based or community-based 
   coloring. it also creates temporal heat maps, and various plots to show interaction types and
   role-based differences.
